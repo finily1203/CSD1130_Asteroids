@@ -1,0 +1,5 @@
+1. Added Texture for ship
+2. Added Texture for asteroid
+3. Added Texture for background
+4. Display of score and ship live on the screen
+5. Press R to restart
