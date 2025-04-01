@@ -85,7 +85,7 @@ struct GameObj
 //Game object instance structure
 struct GameObjInst
 {
-	GameObj *			pObject;	// pointer to the 'original' shape
+	GameObj* pObject;	// pointer to the 'original' shape
 	unsigned long		flag;		// bit flag or-ed together
 	AEVec2				scale;		// scaling value of the object instance
 	AEVec2				posCurr;	// object current position
@@ -96,8 +96,12 @@ struct GameObjInst
 	float				dirCurr;	// object current direction
 	AABB				boundingBox;// object bouding box that encapsulates the object
 	AEMtx33				transform;	// object transformation matrix: Each frame, 
-									// calculate the object instance's transformation matrix and save it here
+	// calculate the object instance's transformation matrix and save it here
 
+// Add these new properties for multiplayer
+	uint16_t            id;         // for identifying asteroids and bullets
+	uint8_t             clientID;   // for identifying which player owns the object
+	float               lifeTime;   // for bullets lifetime tracking
 };
 
 /******************************************************************************/

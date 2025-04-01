@@ -168,16 +168,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Include\Collision.h" />
+    <ClInclude Include="Include\GameServer.h" />
     <ClInclude Include="Include\GameStateList.h" />
     <ClInclude Include="Include\GameStateMgr.h" />
     <ClInclude Include="Include\GameState_Asteroids.h" />
     <ClInclude Include="Include\Main.h" />
+    <ClInclude Include="Include\UDPNetwork.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Collision.cpp" />
+    <ClCompile Include="Src\GameServer.cpp" />
     <ClCompile Include="Src\GameStateMgr.cpp" />
     <ClCompile Include="Src\GameState_Asteroids.cpp" />
     <ClCompile Include="Src\Main.cpp" />
+    <ClCompile Include="Src\UDPNetwork.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
